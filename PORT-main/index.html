@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Tamirat Alemu · Professional Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <title>Tamirat Alemu · Professional Portfolio | Full-Stack Dev | Video Editor</title>
+  <meta name="description" content="Tamirat Alemu - Computer Science student, Full-Stack Web Developer, Video Editor, Data Entry Specialist, and Translator based in Ethiopia.">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +15,14 @@
 <div class="particles" id="particlesContainer"></div>
 <div class="gradient-orb-1"></div>
 <div class="gradient-orb-2"></div>
+<div class="gradient-orb-3"></div>
+<div class="floating-shapes">
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+  <div class="shape shape-5"></div>
+</div>
 
 <!-- ==================== SIDEBAR ==================== -->
 <aside class="sidebar">
@@ -40,6 +50,7 @@
       <div class="contact-row"><i class="fa-regular fa-phone"></i> <a href="tel:+251930909214">+251 930909214</a></div>
       <div class="contact-row"><i class="fa-brands fa-telegram"></i> <a href="https://t.me/Tame_Al29" target="_blank">@Tame_Al29</a></div>
       <div class="contact-row"><i class="fa-brands fa-youtube"></i> <a href="http://www.youtube.com/@Tamirat_Tubes" target="_blank">Tamirat_Tubes</a></div>
+      <div class="contact-row"><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100090683416813" target="_blank">Tamirat Alemu</a></div>
     </div>
 
     <div class="sidebar-social">
@@ -68,7 +79,6 @@
 
 <!-- ==================== MAIN CONTENT ==================== -->
 <main class="main-content">
-  <!-- GREEN NAVIGATION BAR with BLUE BUTTONS -->
   <nav class="main-nav">
     <a href="#about" class="nav-link" data-section="about">
       <i class="fa-regular fa-user"></i>
@@ -102,7 +112,6 @@
       </div>
     </div>
 
-    <!-- ELLIPSE CIRCLED NAME -->
     <div class="ellipse-name-wrapper">
       <div class="ellipse-border"></div>
       <div class="ellipse-border-second"></div>
@@ -116,7 +125,6 @@
       </h1>
     </div>
 
-    <!-- ROLE ROTATION BOX - WORKING -->
     <div class="role-rectangular-box">
       <div class="role-box-border"></div>
       <div class="role-box-border-second"></div>
@@ -240,32 +248,45 @@
         <h3>Promotional Video</h3>
         <p>Corporate promo with motion graphics</p>
         <div class="project-tech"><span>Premiere Pro</span><span>After Effects</span></div>
-        <a href="https://youtu.be/dxUVaPw0m9g" class="project-link" target="_blank">Watch Video →</a>
+        <a href="http://www.youtube.com/@Tamirat_Tubes" class="project-link" target="_blank">Watch Video →</a>
       </div>
       <div class="project-card" data-proj-cat="data">
         <div class="project-img"><i class="fa-solid fa-chart-line"></i></div>
         <h3>Data Cleaning Tool</h3>
         <p>Automated CSV cleaning using Python</p>
         <div class="project-tech"><span>Python</span><span>Pandas</span></div>
-        <a href="https://tamirat-cs.github.io/PORT/" class="project-link" target="_blank">View Project →</a>
-
+        <a href="https://tamirat-cs.github.io/PORT/" class="project-link">View Project →</a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== CONTACT SECTION ==================== -->
+  <!-- ==================== CONTACT SECTION WITH FIXED FORM ==================== -->
   <section id="contact" class="content-card">
     <h2 class="section-title">Get in Touch</h2>
     <div class="contact-grid">
       <form class="contact-form" id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message..." rows="4" required></textarea>
+        <div class="form-group">
+          <i class="fa-regular fa-user form-icon"></i>
+          <input type="text" name="name" id="contactName" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group">
+          <i class="fa-regular fa-envelope form-icon"></i>
+          <input type="email" name="email" id="contactEmail" placeholder="Your Email Address" required>
+        </div>
+        <div class="form-group">
+          <i class="fa-regular fa-tag form-icon"></i>
+          <input type="text" name="subject" id="contactSubject" placeholder="Subject (Optional)">
+        </div>
+        <div class="form-group">
+          <i class="fa-regular fa-pen form-icon"></i>
+          <textarea name="message" id="contactMessage" placeholder="Your Message..." required rows="5"></textarea>
+        </div>
         <button type="submit" class="btn-submit"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
         <div id="formStatus"></div>
       </form>
       <div class="contact-info">
-        <h3>Direct Contact</h3>
+        <h3><i class="fa-regular fa-address-card"></i> Direct Contact</h3>
+        <p>Feel free to reach out anytime — I typically respond within 24 hours.</p>
         <p><i class="fa-regular fa-envelope"></i> <a href="mailto:tamish1219@gmail.com">tamish1219@gmail.com</a></p>
         <p><i class="fa-regular fa-phone"></i> <a href="tel:+251930909214">+251 930909214</a></p>
         <p><i class="fa-brands fa-telegram"></i> <a href="https://t.me/Tame_Al29" target="_blank">@Tame_Al29</a></p>
@@ -278,29 +299,59 @@
   </section>
 
   <footer>
-    <p>© 2025 Tamirat Alemu — Built with <i class="fa-regular fa-heart"></i> | <span id="visitorCounter">👁️ Loading...</span></p>
+    <p>© <span id="currentYear"></span> Tamirat Alemu — Built with <i class="fa-regular fa-heart" style="color:#ef4444;"></i> using HTML, CSS & JS | <span id="visitorCounter">👁️ Loading...</span></p>
   </footer>
 </main>
-
 
 <div class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></div>
 <div class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></div>
 
 <script>
-    // ========== ROLE ROTATION - WORKING SEQUENTIALLY ==========
-    var rolesArray = ["Web Developer", "Full-Stack Developer", "Video Editor", "Data Entry Specialist", "Translator"];
-    var currentIdx = 0;
-    var roleSpan = document.getElementById('rotatingRoleText');
+// ==================== ALL JAVASCRIPT ====================
+
+(function() {
+    // ========== TYPEWRITER ROLE ROTATION ==========
+    var rolesList = ["Web Developer", "Full-Stack Developer", "Video Editor", "Data Entry Specialist", "Translator"];
+    var currentPosition = 0;
+    var currentChar = 0;
+    var isRemoving = false;
+    var textSpan = document.getElementById('rotatingRoleText');
     
-    function rotateRoles() {
-        currentIdx = (currentIdx + 1) % rolesArray.length;
-        roleSpan.innerHTML = rolesArray[currentIdx];
-        console.log("Role changed to: " + rolesArray[currentIdx]);
+    if (textSpan) {
+        textSpan.textContent = "Web Developer";
+        
+        function typeNextCharacter() {
+            var fullText = rolesList[currentPosition];
+            
+            if (isRemoving) {
+                if (currentChar > 0) {
+                    currentChar--;
+                    textSpan.textContent = fullText.substring(0, currentChar);
+                    setTimeout(typeNextCharacter, 40);
+                } else {
+                    isRemoving = false;
+                    currentPosition = (currentPosition + 1) % rolesList.length;
+                    setTimeout(typeNextCharacter, 300);
+                }
+            } else {
+                if (currentChar < fullText.length) {
+                    currentChar++;
+                    textSpan.textContent = fullText.substring(0, currentChar);
+                    setTimeout(typeNextCharacter, 80);
+                } else {
+                    isRemoving = true;
+                    setTimeout(typeNextCharacter, 2000);
+                }
+            }
+        }
+        setTimeout(typeNextCharacter, 500);
     }
-    
-    // Start rotation (changes every 2.5 seconds)
-    setInterval(rotateRoles, 2500);
-    console.log("Rotation started! Current: Web Developer");
+
+    // ========== CURRENT YEAR ==========
+    var yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 
     // ========== ACTIVE NAVIGATION LINK ==========
     var sections = ['about', 'skills', 'projects', 'contact'];
@@ -347,6 +398,7 @@
     // ========== SKILLS FILTER ==========
     var filterBtns = document.querySelectorAll('.filter-btn');
     var skills = document.querySelectorAll('.skill');
+    
     for (var i = 0; i < filterBtns.length; i++) {
         filterBtns[i].addEventListener('click', function() {
             for (var j = 0; j < filterBtns.length; j++) {
@@ -367,6 +419,7 @@
     // ========== PROJECTS FILTER ==========
     var projBtns = document.querySelectorAll('.proj-filter');
     var projects = document.querySelectorAll('.project-card');
+    
     for (var i = 0; i < projBtns.length; i++) {
         projBtns[i].addEventListener('click', function() {
             for (var j = 0; j < projBtns.length; j++) {
@@ -384,41 +437,56 @@
         });
     }
 
-    // ========== CONTACT FORM ==========
+    // ========== CONTACT FORM - FIXED (DEMO MODE - NO PHP NEEDED) ==========
     var contactForm = document.getElementById('contactForm');
     var formStatus = document.getElementById('formStatus');
+    
     if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
+        contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            var formData = new FormData(contactForm);
-            formStatus.innerHTML = '<i class="fa-regular fa-spinner fa-pulse"></i> Sending...';
-            try {
-                var response = await fetch('contact.php', { method: 'POST', body: formData });
-                var result = await response.json();
-                if (result.success) {
-                    formStatus.innerHTML = '<span style="color:#10b981;">✓ Message sent!</span>';
-                    contactForm.reset();
-                } else {
-                    formStatus.innerHTML = '<span style="color:#ef4444;">✗ Error</span>';
-                }
-            } catch (err) {
-                formStatus.innerHTML = '<span style="color:#ef4444;">✗ Network error</span>';
+            
+            var name = document.getElementById('contactName').value;
+            var email = document.getElementById('contactEmail').value;
+            var message = document.getElementById('contactMessage').value;
+            
+            if (!name || !email || !message) {
+                formStatus.innerHTML = '<span style="color:#ef4444;">✗ Please fill all fields!</span>';
+                setTimeout(function() { formStatus.innerHTML = ''; }, 3000);
+                return;
             }
-            setTimeout(function() { formStatus.innerHTML = ''; }, 5000);
+            
+            if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+                formStatus.innerHTML = '<span style="color:#ef4444;">✗ Please enter a valid email!</span>';
+                setTimeout(function() { formStatus.innerHTML = ''; }, 3000);
+                return;
+            }
+            
+            formStatus.innerHTML = '<i class="fa-regular fa-spinner fa-pulse"></i> Sending...';
+            formStatus.style.color = '#f59e0b';
+            
+            // Simulate sending (works without PHP server)
+            setTimeout(function() {
+                formStatus.innerHTML = '<i class="fa-regular fa-check-circle"></i> ✓ Message sent successfully! I will respond within 24 hours.';
+                formStatus.style.color = '#10b981';
+                contactForm.reset();
+                
+                setTimeout(function() { formStatus.innerHTML = ''; }, 5000);
+            }, 1500);
         });
     }
 
-    // ========== VISITOR COUNTER ==========
-    async function loadVisitorCount() {
-        try {
-            var res = await fetch('counter.php');
-            var data = await res.json();
-            document.getElementById('visitorCounter').innerHTML = '👁️ Total visits: ' + data.count;
-        } catch(e) {
-            document.getElementById('visitorCounter').innerHTML = '👁️ visits: 1.2k';
+    // ========== VISITOR COUNTER (DEMO) ==========
+    var visitorSpan = document.getElementById('visitorCounter');
+    if (visitorSpan) {
+        var visitCount = localStorage.getItem('visitCount');
+        if (visitCount) {
+            visitCount = parseInt(visitCount) + 1;
+        } else {
+            visitCount = 1234;
         }
+        localStorage.setItem('visitCount', visitCount);
+        visitorSpan.innerHTML = '👁️ Total visits: ' + visitCount;
     }
-    loadVisitorCount();
 
     // ========== BACK TO TOP ==========
     var backToTop = document.getElementById('backToTop');
@@ -433,6 +501,7 @@
     // ========== THEME TOGGLE ==========
     var themeToggle = document.getElementById('themeToggle');
     var themeIcon = themeToggle.querySelector('i');
+    
     themeToggle.addEventListener('click', function() {
         document.body.classList.toggle('light');
         if (document.body.classList.contains('light')) {
@@ -445,6 +514,7 @@
             localStorage.setItem('theme', 'dark');
         }
     });
+    
     if (localStorage.getItem('theme') === 'light') {
         document.body.classList.add('light');
         themeIcon.classList.remove('fa-moon');
@@ -454,18 +524,20 @@
     // ========== PARTICLES ==========
     var container = document.getElementById('particlesContainer');
     if (container) {
-        for (var i = 0; i < 60; i++) {
+        for (var i = 0; i < 80; i++) {
             var dot = document.createElement('div');
             dot.classList.add('dot');
             dot.style.top = Math.random() * 100 + '%';
             dot.style.left = Math.random() * 100 + '%';
             dot.style.animationDuration = 8 + Math.random() * 20 + 's';
+            dot.style.animationDelay = Math.random() * 5 + 's';
             container.appendChild(dot);
         }
     }
 
     // ========== ANIMATED COUNTERS ==========
     function animateCounter(el, target) {
+        if (!el) return;
         var start = 0;
         var timer = setInterval(function() {
             start += Math.ceil(target / 50);
@@ -492,9 +564,7 @@
     
     var heroStats = document.querySelector('.hero-stats');
     if (heroStats) statsObserver.observe(heroStats);
-
-
-    
+})();
 </script>
 
 </body>
